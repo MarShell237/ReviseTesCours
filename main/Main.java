@@ -16,6 +16,7 @@ class Main{
             case 2:
                 menuD_Edition();
                 int choixDuJoueurDuMenuEdition = optionMenuEdition();
+                actionDuMenuEdition(choixDuJoueurDuMenuEdition);
                 System.out.println("Edition terminee✅");
                 break;
             case 3:
