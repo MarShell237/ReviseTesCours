@@ -1,3 +1,6 @@
+import static otherClass.Action.actionDuMenuEdition;
+import static otherClass.Action.actionDuMenuJeu;
+import static otherClass.Choix.*;
 import static otherClass.Menu.*;
 
 class Main{
