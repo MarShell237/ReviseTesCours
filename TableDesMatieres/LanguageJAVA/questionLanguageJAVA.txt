@@ -1,0 +1,5 @@
+Le language Java est un language compilé
+Le slogan de Java c'est "write once run anywhere"
+un byte code peut être executer peut importe la version du jre de la machine hôte
+la mascote de java s'appele duke
+java est a paradigme imperatif
