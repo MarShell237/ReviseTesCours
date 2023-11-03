@@ -1,25 +1,34 @@
 package others_class;
+
+import java.util.Scanner;
+
+import static others_class.ReadFile.readFile;
+import static others_class.WriteFile.writeFile;
+
 public class Joueur {
     private final String nom;
     private int score;
 
-    static Joueur[] classement = new Joueur[6];
+    public static Joueur[] classement = new Joueur[6];
 
-//    void
-//    {
-//            new Joueur("joueur1",0),
-//            new Joueur("joueur2",0),
-//            new Joueur("joueur3",0),
-//            new Joueur("joueur4",0),
-//            new Joueur("joueur5",0),
-//            new Joueur("joueurTampon",0)
-//    };
-
+    public static void fillTableClassement(String namePath, String scorepath){
+        String[] names = readFile(namePath);
+        String[] scores = readFile(scorepath);
+       for (int i=0; i<=4; i++){
+           int tamponScore = Integer.parseInt(scores[i]);
+           classement[i] = new Joueur(names[i],tamponScore);
+       }
+    }
 
 
     public Joueur(String nom, int score) {
         this.nom = nom;
         this.score = score;
+    }
+
+    public Joueur(){
+        this.nom = "";
+        this.score = 0;
     }
 
 
@@ -31,6 +40,7 @@ public class Joueur {
         return score;
     }
 
+
     static Joueur[] triSelection(Joueur[] tab){
         // programme qui realise le trie selection
 
@@ -39,7 +49,7 @@ public class Joueur {
         int i,j,k;
         Joueur tmp;
 
-        for(i=0;i<n;i--){
+        for(i=0;i<n;i++){
             j=i;
             for(k=i+1;k<n;k++){
                 if(tab[j].score > tab[k].score){
@@ -52,9 +62,17 @@ public class Joueur {
         }
         return tab;
     }
-    void insertNewRecord_To_Classement(Joueur nouveauRecord){
 
-        classement[5] = nouveauRecord;
+
+   public static void insertNewRecord_To_Classement(int scoreNouveauJouer){
+
+       Scanner sc = new Scanner(System.in);
+
+       System.out.println("▶veuillez entrer votre nom:");
+       String nomNouveauJoueur = sc.nextLine();
+
+       classement[5] = new Joueur(nomNouveauJoueur,scoreNouveauJouer);
+       System.out.println();
 
         classement = triSelection(classement);
 
@@ -72,7 +90,11 @@ public class Joueur {
         System.out.println();
     }
 
-    void writeClassement_To_file(){
-        //ecrire le tableau dans le fichier meilleursScore
+    public static void writeClassement_To_file(String namepath, String scorepath) {
+        //ecrire le tableau classement dans des fichiers
+        for (int i = 0; i <= 4; i++) {
+            writeFile(namepath,classement[i].getNom());
+            writeFile(scorepath,Integer.toString(classement[i].getScore()));
+        }
     }
 }

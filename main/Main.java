@@ -1,6 +1,6 @@
-import static others_class.Action.actionDuMenuEdition;
-import static others_class.Action.actionDuMenuJeu;
+import static others_class.Action.*;
 import static others_class.Choix.*;
+import static others_class.Joueur.*;
 import static others_class.Menu.*;
 
 class Main{
@@ -14,6 +14,7 @@ class Main{
                 int choixDuJoueurDuMenuJeu = optionMenuJeu();
                 int scoreDuJouer = actionDuMenuJeu(choixDuJoueurDuMenuJeu);
                 System.out.println("vous avez eu un total de "+scoreDuJouer+" reponses justes");
+                insertNewRecord_To_Classement(scoreDuJouer);
                 gameOver();
                 break;
             case 2:

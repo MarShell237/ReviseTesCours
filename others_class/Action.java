@@ -2,6 +2,8 @@ package others_class;
 
 import java.util.Scanner;
 
+import static others_class.Joueur.fillTableClassement;
+import static others_class.Joueur.writeClassement_To_file;
 import static others_class.ReadFile.readFile;
 import static others_class.WriteFile.writeFile;
 import static others_class.Choix.repondreParVraiOuFaux;
@@ -18,16 +20,25 @@ public class Action {
                 questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt");
                 reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt");
                 explications=readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt");
+                fillTableClassement("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\classement_nom.txt",
+                        "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\classement_score.txt"
+                );
                 break;
             case 2:
                 questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt");
                 reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt");
                 explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt");
+                fillTableClassement("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\classement_nom.txt",
+                        "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\classement_score.txt"
+                );
                 break;
             case 3:
                 questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt");
                 reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt");
                 explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt");
+                fillTableClassement("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\classement_nom.txt",
+                        "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\classement_score.txt"
+                );
                 break;
         }
 
@@ -64,6 +75,20 @@ public class Action {
             {
                 break;
             }
+        }
+        switch (choixDuJouerDuMenuJeu){
+            case 1:
+                writeClassement_To_file("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\classement_nom.txt",
+                                          "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\classement_score.txt"
+                );
+            case 2:
+                writeClassement_To_file("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\classement_nom.txt",
+                                          "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\classement_score.txt"
+                );
+            case 3:
+                writeClassement_To_file("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\classement_nom.txt",
+                                          "C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\classement_score.txt"
+                );
         }
         return score;
     }

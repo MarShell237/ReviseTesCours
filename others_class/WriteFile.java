@@ -6,7 +6,7 @@ public class WriteFile {
     public static void writeFile(String cheminDaccesDuFichier, String newLine) {
         try {
             FileWriter myWriter = new FileWriter(cheminDaccesDuFichier);
-            myWriter.write("\n"+newLine);
+            myWriter.write(newLine);
             myWriter.close();
             System.out.println("nouvelle ligne editer avec success");
         } catch (IOException e) {
