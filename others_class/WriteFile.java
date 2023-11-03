@@ -1,4 +1,4 @@
-package otherclass;
+package others_class;
 import java.io.FileWriter;
 import java.io.IOException;
 

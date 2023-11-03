@@ -1,4 +1,4 @@
-package otherClass;
+package others_class;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

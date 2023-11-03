@@ -1,9 +1,4 @@
-package otherClass;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-import static otherClass.ReadFile.readFile;
-import static otherclass.WriteFile.writeFile;
+package others_class;
 
 public class Menu {
 

@@ -1,10 +1,10 @@
-package otherClass;
+package others_class;
 
 import java.util.Scanner;
 
-import static otherClass.ReadFile.readFile;
-import static otherclass.WriteFile.writeFile;
-import static otherClass.Choix.repondreParVraiOuFaux;
+import static others_class.ReadFile.readFile;
+import static others_class.WriteFile.writeFile;
+import static others_class.Choix.repondreParVraiOuFaux;
 
 public class Action {
     public static int actionDuMenuJeu(int choixDuJouerDuMenuJeu){
@@ -15,19 +15,19 @@ public class Action {
 
         switch (choixDuJouerDuMenuJeu){
             case 1:
-                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt");
-                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt");
-                explications=readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt");
+                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt");
+                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt");
+                explications=readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt");
                 break;
             case 2:
-                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt");
-                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt");
-                explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt");
+                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt");
+                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt");
+                explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt");
                 break;
             case 3:
-                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt");
-                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt");
-                explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt");
+                questions = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt");
+                reponses = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt");
+                explications = readFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt");
                 break;
         }
 
@@ -77,41 +77,41 @@ public class Action {
             case 1:
                 System.out.println("Enter la nouvelle question D'anglais");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt",nouvelleQuestion);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt",reponseDeLaNouvelleQuestion);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt",explicationDeLaNouvelleQuestion);
                 break;
             case 2:
                 System.out.println("Enter la nouvelle question de cryptographie");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt",nouvelleQuestion);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt",reponseDeLaNouvelleQuestion);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt",explicationDeLaNouvelleQuestion);
                 break;
             case 3:
                 System.out.println("Enter la nouvelle question de langage JAVA");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt",nouvelleQuestion);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt",reponseDeLaNouvelleQuestion);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt",explicationDeLaNouvelleQuestion);
                 break;
 
         }

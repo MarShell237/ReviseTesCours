@@ -1,7 +1,7 @@
-import static otherClass.Action.actionDuMenuEdition;
-import static otherClass.Action.actionDuMenuJeu;
-import static otherClass.Choix.*;
-import static otherClass.Menu.*;
+import static others_class.Action.actionDuMenuEdition;
+import static others_class.Action.actionDuMenuJeu;
+import static others_class.Choix.*;
+import static others_class.Menu.*;
 
 class Main{
     public static void main(String[] args){
