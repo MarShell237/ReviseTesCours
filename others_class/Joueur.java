@@ -2,6 +2,7 @@ package others_class;
 
 import java.util.Scanner;
 
+import static java.util.Arrays.sort;
 import static others_class.ReadFile.readFile;
 import static others_class.WriteFile.writeFile;
 
@@ -41,27 +42,27 @@ public class Joueur {
     }
 
 
-    static Joueur[] triSelection(Joueur[] tab){
-        // programme qui realise le trie selection
-
-        int n = tab.length;
-
-        int i,j,k;
-        Joueur tmp;
-
-        for(i=0;i<n;i++){
-            j=i;
-            for(k=i+1;k<n;k++){
-                if(tab[j].score > tab[k].score){
-                    j=k;
-                }
-            }
-            tmp=tab[i];
-            tab[i]=tab[j];
-            tab[j]=tmp;
-        }
-        return tab;
-    }
+//    static Joueur[] triSelection(Joueur[] tab){
+//        // programme qui realise le trie selection
+//
+//        int n = tab.length;
+//
+//        int i,j,k;
+//        Joueur tmp;
+//
+//        for(i=0;i<n;i++){
+//            j=i;
+//            for(k=i+1;k<n;k++){
+//                if(tab[j].score > tab[k].score){
+//                    j=k;
+//                }
+//            }
+//            tmp=tab[i];
+//            tab[i]=tab[j];
+//            tab[j]=tmp;
+//        }
+//        return tab;
+//    }
 
 
    public static void insertNewRecord_To_Classement(int scoreNouveauJouer){
@@ -74,7 +75,7 @@ public class Joueur {
        classement[5] = new Joueur(nomNouveauJoueur,scoreNouveauJouer);
        System.out.println();
 
-        classement = triSelection(classement);
+        sort(classement);
 
         System.out.println();
         System.out.println("$***************************$");
