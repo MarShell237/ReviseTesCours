@@ -42,28 +42,6 @@ public class Joueur {
     }
 
 
-//    static Joueur[] triSelection(Joueur[] tab){
-//        // programme qui realise le trie selection
-//
-//        int n = tab.length;
-//
-//        int i,j,k;
-//        Joueur tmp;
-//
-//        for(i=0;i<n;i++){
-//            j=i;
-//            for(k=i+1;k<n;k++){
-//                if(tab[j].score > tab[k].score){
-//                    j=k;
-//                }
-//            }
-//            tmp=tab[i];
-//            tab[i]=tab[j];
-//            tab[j]=tmp;
-//        }
-//        return tab;
-//    }
-
 
    public static void insertNewRecord_To_Classement(int scoreNouveauJouer){
 
@@ -93,9 +71,11 @@ public class Joueur {
 
     public static void writeClassement_To_file(String namepath, String scorepath) {
         //ecrire le tableau classement dans des fichiers
-        for (int i = 0; i <= 4; i++) {
-            writeFile(namepath,classement[i].getNom());
-            writeFile(scorepath,Integer.toString(classement[i].getScore()));
+        writeFile(namepath,classement[0].getNom(),false);
+        writeFile(scorepath,Integer.toString(classement[0].getScore()),false);
+        for (int i = 1; i <= 4; i++) {
+            writeFile(namepath,classement[i].getNom(),true);
+            writeFile(scorepath,Integer.toString(classement[i].getScore()),true);
         }
     }
 }

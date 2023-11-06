@@ -102,41 +102,59 @@ public class Action {
             case 1:
                 System.out.println("Enter la nouvelle question D'anglais");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\questionAnglais.txt",
+                            nouvelleQuestion,
+                            true);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\reponseAnglais.txt",
+                            reponseDeLaNouvelleQuestion,
+                            true);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Anglais\\explicationAnglais.txt",
+                        explicationDeLaNouvelleQuestion,
+                            true);
                 break;
             case 2:
                 System.out.println("Enter la nouvelle question de cryptographie");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\questionCryptographie.txt",
+                            nouvelleQuestion,
+                            true);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\reponseCryptographie.txt",
+                        reponseDeLaNouvelleQuestion,
+                        true);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\Cryptographie\\explicationCryptographie.txt",
+                        explicationDeLaNouvelleQuestion,
+                        true);
                 break;
             case 3:
                 System.out.println("Enter la nouvelle question de langage JAVA");
                 nouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt",nouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\questionLanguageJAVA.txt",
+                        nouvelleQuestion,
+                        true);
 
                 System.out.println("Entrer reponse juste 1 pour vrai et 2 pour faux");
                 reponseDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt",reponseDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\reponseLanguageJava.txt",
+                        reponseDeLaNouvelleQuestion,
+                        true);
 
                 System.out.println("Entrer le message a afficher si la reponse a la question est incorrecte");
                 explicationDeLaNouvelleQuestion = sc.nextLine();
-                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt",explicationDeLaNouvelleQuestion);
+                writeFile("C:\\Users\\chris\\OneDrive\\Bureau\\docs\\projetJava_V2.0\\TableDesMatieres\\LanguageJAVA\\explicationLanguageJAVA.txt",
+                        explicationDeLaNouvelleQuestion,
+                        true);
                 break;
 
         }
