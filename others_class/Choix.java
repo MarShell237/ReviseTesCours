@@ -1,4 +1,4 @@
-package others_class;
+﻿package others_class;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ public class Choix {
         try{
             do {
                 if (compteur > 0){
-                    System.out.println("🛑warning:veuillez entrer une valeur comprise entre 1 et 3");
+                    System.out.println("🛑warning: veuillez entrer une valeur comprise entre 1 et 3");
                     System.out.println();
                 }
 
@@ -25,7 +25,7 @@ public class Choix {
         catch (InputMismatchException e)
         {
             System.out.println();
-            System.out.println("⛔Erreur de saisie:veuillez entrer une valeur entiere comprise entre 1 et 3");
+            System.out.println("⛔Erreur de saisie: veuillez entrer une valeur entière comprise entre 1 et 3");
             System.out.println();
             optionMenuPrincipal();
         }
@@ -42,11 +42,11 @@ public class Choix {
         try{
             do {
                 if (compteur > 0){
-                    System.out.println("🛑warning:veuillez choisir soit 1 soit 2");
+                    System.out.println("🛑warning: veuillez choisir soit 1 soit 2");
                     System.out.println();
                 }
 
-                System.out.println("⏩appuyez sur 1 pour repondre vrai ou 2 pour repondre faux");
+                System.out.println("⏩appuyez sur 1 pour répondre vrai ou 2 pour répondre faux");
                 reponse = sc.nextInt();
 
                 compteur++;
@@ -55,7 +55,7 @@ public class Choix {
         catch (InputMismatchException e)
         {
             System.out.println();
-            System.out.println("⛔Erreur de saisie:veuillez entrer une valeur entiere soit 1 soit 2");
+            System.out.println("⛔Erreur de saisie: veuillez entrer une valeur entière soit 1 soit 2");
             System.out.println();
             optionMenuPrincipal();
         }
@@ -69,7 +69,7 @@ public class Choix {
         try{
             do {
                 if (compteur > 0){
-                    System.out.println("🛑warning:veuillez entrer une valeur entiere comprise entre 1 et 3");
+                    System.out.println("🛑warning: veuillez entrer une valeur entière comprise entre 1 et 3");
                     System.out.println();
                 }
 
@@ -83,7 +83,7 @@ public class Choix {
         catch (InputMismatchException e)
         {
             System.out.println();
-            System.out.println("⛔Erreur de saisie:veuillez entrer une valeur entiere comprise entre 1 et 3");
+            System.out.println("⛔Erreur de saisie: veuillez entrer une valeur entière comprise entre 1 et 3");
             System.out.println();
             optionMenuPrincipal();
         }
@@ -97,11 +97,11 @@ public class Choix {
         try{
             do {
                 if (compteur > 0){
-                    System.out.println("🛑warning:veuillez entrer une valeur entiere comprise entre 1 et 3");
+                    System.out.println("🛑warning: veuillez entrer une valeur entière comprise entre 1 et 3");
                     System.out.println();
                 }
 
-                System.out.println("⏩Veuillez choisir une option du menu d'edition:");
+                System.out.println("⏩Veuillez choisir une option du menu d’Edition:");
                 choix = sc.nextInt();
                 System.out.println();
 
@@ -111,7 +111,7 @@ public class Choix {
         catch (InputMismatchException e)
         {
             System.out.println();
-            System.out.println("⛔Erreur de saisie:veuillez entrer une valeur entiere comprise entre 1 et 3");
+            System.out.println("⛔Erreur de saisie: veuillez entrer une valeur entière comprise entre 1 et 3");
             System.out.println();
             optionMenuPrincipal();
         }

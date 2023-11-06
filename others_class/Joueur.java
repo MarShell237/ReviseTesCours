@@ -79,7 +79,7 @@ public class Joueur {
     }
 
     public static void writeClassement_To_file(String namepath, String scorepath) {
-        //ecrire le tableau classement dans des fichiers
+        //écrire le tableau classement dans des fichiers
         writeFile(namepath,classement[0].getNom(),false);
         writeFile(scorepath,Integer.toString(classement[0].getScore()),false);
         for (int i = 1; i <= 4; i++) {
