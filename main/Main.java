@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import static others_class.Action.*;
 import static others_class.Choix.*;
 import static others_class.Joueur.*;
@@ -14,7 +16,9 @@ class Main{
                 int choixDuJoueurDuMenuJeu = optionMenuJeu();
                 int scoreDuJouer = actionDuMenuJeu(choixDuJoueurDuMenuJeu);
                 System.out.println("vous avez eu un total de "+scoreDuJouer+" reponses justes");
-                insertNewRecord_To_Classement(scoreDuJouer);
+
+                menuDesMeilleursJoueurs();
+
                 gameOver();
                 break;
             case 2:
