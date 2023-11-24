@@ -1,2 +1,0 @@
-
-Le RSA respecte le principe de kerkoff

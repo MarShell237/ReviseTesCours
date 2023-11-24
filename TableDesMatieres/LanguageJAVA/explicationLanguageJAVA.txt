@@ -1,5 +1,0 @@
-java beneficie de la rapidite des languages compilés et de la portabilite des languages interprétés
-c'est bel et bien son slogan
-un byte code est executable uniquement avec la version du jre qui l'a compilé 
-c'est bel et bien lui!
-java est a paradigme orienté objet

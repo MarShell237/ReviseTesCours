@@ -1,0 +1,33 @@
+Le language Java est un language compilé
+Le slogan de Java c'est "write once run anywhere"
+un byte code peut être executer peut importe la version du jre de la machine hôte
+la mascote de java s'appele duke
+java est a paradigme imperatif
+la methode master est le point d'entree du compilateur
+println signifie print line c'est une methode qui permet d'imprimer une valeur a l'ecran ou dans un fichier
+En java on peut creer des objet par declaration exemple: "Joueur j;"
+Un fichier .java ne peut contenir qu'une seule et unique classe 
+Le compilateur JAVA s'appele JAVAC
+L'executeur JAVA s'appele JAVA
+Le byteCode generer apres la compilation d'un programme java possede l'extension .exe
+En java toutes les classes descendent de la classe superclasse JAVA
+En java on peut passer les paramestres d'une methode par pointeur
+Le parametre effectif est le parametre avec lequel la fonction est appele
+Le parametre formel est le parametre avec lequel on ecrit la fonction
+En java le constructeur par defaut d'une classe est automatiquement fournit
+Il existe une methode this(); en java
+le mot cle this contient la reference de l'objet en cours de creation
+pour acceder aux methodes d'une classe on utilise la notaion pointe
+UML est un logiciel de de modelisation graphique
+on peut utiliser une classe qui n'est pas dans le package courant sans utiliser l'instruction import
+Les classes String, Math, System sont automatiquement importes dans tous les programmes java
+Par convention on ecrit le nom des package en majuscule
+on peut declarer un import ou un package n'importe ou dans un code source
+la methode finalize(); est l'equivalent java du destructeur en c++
+pour steriliser une classe on utilise le mot cle "final" dans sa declaration
+il est interdit d'ecrire une classe qui herite d'une classe native du JAVA
+une classe est dit abstraite lorsqu'elle possede des methodes abstraites
+une classe abstraite est instanciable
+une classe concraite qui herite d'une classe abstraite doit obligatoirement redefinir les methodes abstraites de la classe mere dont elle herite
+java ne permet pas d'heritage multiple
+java autorise l'implementation multiple d'interfaces 

@@ -1,0 +1,33 @@
+java beneficie de la rapidite des languages compilés et de la portabilite des languages interprétés
+c'est bel et bien son slogan
+un byte code est executable uniquement avec la version du jre qui l'a compilé 
+c'est bel et bien lui!
+java est a paradigme orienté objet
+La methode statique main est le point d'entree du compilateur
+cette methode s'utilise precede d'un System.out
+En java les objets se declarent exclusivement par allocation avec le mot cle "new"
+un fichier .java peut contenir plusieurs classe a condition que la classe qui a le meme nom que le fichier aie la visibilite public
+JAVAC pour "JAVA Compilator"
+Le compilateur JAVAC et l'executeur JAVA sont des fichier executables tout 2 contenu dans le dossier bin du dossier java
+Le byte code possede l'extension .class
+Toutes les classes descendent de la super classe Objet
+Les pointeurs n'existent pas en java et les parametres sont passe uniquement par valeur
+a retenir
+a retenir
+Meme lorsqu'un constructeur n'est pas explicitement declare Java fournit automatiquement un constructeur par defaut a la classe
+this(); permet d'invoquer un autre constructeur et lorsqu'elle est utilise elle doit etre appele en premier dans le programme
+Le mot cle this contient la reference de l'obejet en cours de manipulation
+exemple: Eleve1.calcule_de_la_moyenne();
+Unified Modeling Language (UML), est un langage de modélisation graphique à base de pictogrammes
+Cette utilisation est possible mais est deconseiller on peut en effet uniliser le chemin d'acces de la classe exemple: java.util.Scanner sc = java.util.Scanner(System.in);
+Ces classes sont consideres comme des classes de bases sont automatiquement importes et appartiennent au package java.lang
+par convention le nom des packages sont ecrit en minuscule
+Elles doivent apparaitre obligatoirement au debut du code source et dans l'ordre 1-package, 2-import, 3-class
+dans cette methode on ferme les fichiers ouvert et plusieurs autre information cette methode est appele automatiquement par le compiateur
+une classe qui est final ne peut pas avoir de classe heritiere
+la redefinition des methodes des classes natives du JAVA est autoriser
+elle doit posseder au moins une methode abstraite
+une classe abstraite ne peut pas etre instancier
+c'est la tout l'interet des classes abstraites, le compilateurva generer une erreur si jamais les classes concraites qui herite d'une classe abstraite ne redefinissent pas les methodes abstraites de la classe mere
+pour contourner le probleme d'heritage multiple en java on utilise les interfaces
+contrairement a l'heritage multiple l'implementation multiple est accepter

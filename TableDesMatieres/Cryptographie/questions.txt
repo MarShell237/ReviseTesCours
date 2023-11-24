@@ -1,0 +1,17 @@
+Le RSA respecte le principe de kerckhoff
+la communication est le fait de transmettre un message a un ou plusieurs personnes qui en accuse reception
+les composantes de la communication sont: 1.l'emetteur 2.le recepteur 3.le message  4.le canal 5.le referent 6.le code
+le canal c'est le support materiel qui permet de maintenir la communication
+le canal dans la communication a une fonction referentiel
+le modele de la theorie de l'information a été établie par scharol
+le modele cybernetique a été develloper en 1990 par l'austro-hongroi Wiener
+Les attaques possibles sur un systeme de communication sont: L'interruption, L'interception, La modification, La fabrication.
+le principe de kerckhoff dit que: <<La securite du chiffre ne doit pasdependre de ce qui ne peut pas etre facilement change>>
+Les attaques a :texte chiffre connue, texte clair connue, texte clair choisit, texte chiffre choisit sont les possible sur un systeme de communication 
+Tous les cryptages asymetriques respectent le princpe de kerckhoff
+Les cryptages symetriques sont plus rapides que les cryptages asymetriques
+On dit qu'un nombre x apparteneant a Z(n) est inversible si x mod n = 1
+l'inverse de x appartenant a Z(n) est le nombre (x^-1) qui appartient a Z(n) et dont PGCD((x^-1),n) = 1 tel que x*(x^-1) mod 30 = 1
+Le procede de chiffre multiplicatif est tout simplement le cryptage affine dont la valeur de b vaut 0
+le sigle RSA signifie Rest Secure Anti-attack
+El-Gamal : est un système de cryptographie à clé publique basé sur le problème du logarithme discret

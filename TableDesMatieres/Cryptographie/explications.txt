@@ -1,0 +1,17 @@
+Le RSA est un chiffrement moderne dont la securite repose sur la cle car son algoritme est public
+la communication vient du mot communicare qui veut dire etre en relation avec
+l'émetteur, le recepteur, le message, le canal, le referent et le code sont les 6 composantes de la communication 
+Le canal est le chemin par le quel on passe pour communiquer
+le canal dans la communication a une fonction phatique
+le modele de la theorie de línformation a été établie par Schannon
+ce modele a été develloper en 1948 par l'américain Wiener qui devellope la theorie de l'information de son eleve Shannon en y ajoutant la notion de fillback
+en plus de ces trois types d'attaques on peut aussi ajouter L'usurpation d'identite virtuelle ou L'ecoute des conversations de maniere passive
+en effet c'est une autre facon de dire que << la securite du crypto-systeme doit reposer sur la cle et non sur la confidentialite de l'algorithme>>
+ces attaques concerne les systemes de chiffrements et non les systemes de communications. Les attaques possibles sur un systeme de communications sont: L'interruption, L'interception, La Modification et La fabrication. 
+En effet les cryptages asymetriques comme le RSA ou le cryptage de EL-GAMAl et bien d'autres respectent tous le principe de kerckhoff
+En effet les cryptages symetriques sont jusqu'a 1000 fois plus rapides cela est du au fait que les algorithmes de cryptages des systemes asymetriques sont plus complexes et la taille de leurs cles sont beaucoup plus grande il ont une charge de calcul plus elever ce qui necessite donc plus de temps.
+un nombre x appartenant a un ensemble Z(n) est inversible si PGCD(x,n)=1
+cette methode permet de trouver rapidement l'inverse du'un nombre sans passer par la resolution d'une equation diophantienne
+vrai c'est une version plus simplifie du chiffrement affine
+le sigle RSA signifie Rivest Shamir Adleman
+Le systeme cryptographique de Diffie-Hellman est aussi basee sur le probleme du logarithme discret
